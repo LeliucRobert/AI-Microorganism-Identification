@@ -1,6 +1,6 @@
 
 
-                                                                                                           **I.A.- Identificare microorganisme**
+**I.A.- Identificare microorganisme**
                                                                                                            
                                                                                                            
 **LICEUL TEORETIC ION LUCA**
