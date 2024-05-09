@@ -1,32 +1,35 @@
-**LICEUL TEORETIC ION LUCA**
 
-**I.A.- Identificare microorganisme**
+
+                                                                                                           **I.A.- Identificare microorganisme**
+                                                                                                           
+                                                                                                           
+**LICEUL TEORETIC ION LUCA**
 
 **SUPERVIZORI:**
 
-**PROFESOR BARCĂU MIRELA**
+    **PROFESOR BARCĂU MIRELA**
 
 **AUTORI:**
 
-**LUPU SEBASTIAN-RADU**
-
-**LELIUC ROBERT-CONSTANTIN**
+    **LUPU SEBASTIAN-RADU**
+    
+    **LELIUC ROBERT-CONSTANTIN**
 
 **2021**
 
 **ARGUMENT**
 
-**Inteligenta artificiala reprezinta capacitatea unui sistem de a interpreta corect datele externe, de a invata din astfel de date și de a folosi ceea ce a invatat pentru a-si atinge obiective și sarcini specifice printr-o adaptare flexibilă.**
-
-**Istoria inteligenței artificiale așa cum este ea percepută în ziua de astăzi tehnologie care gândește ca un om începe, însă, în a doua parte a secolului trecut. Odată cu invenția computerului digital în anii ‘40, ideea construcției unei minți artificiale, electronice, a prins tot mai mult contur. Din 1949 si pana in 1960, Arthur Samuel a lucrat intens la dezvoltarea inteligenței artificiale, de la simpla recunoaștere a unor modele, la învățarea din experiența. Spre deosebire de percepția generală, inteligența artificială nu se limitează doar la IT sau industria tehnologică, ci este utilizată pe scară largă în alte domenii, cum ar fi medicină, mediul de afaceri, sistemul educațional și producție. Un sistem A.I. poate invata prin doua metode principale: Machine Learning sau Deep Learning. De exemplu, Machine Learning se axează pe construcția sistemelor care pot învăța sau își pot îmbunătăți performanțele în funcție de datele pe care le procesează, în timp ce Deep Learning, se referă așa cum spune și denumirea la o învățare mai profundă, care are la bază metode de învățare automată, bazate pe rețele neuronale**
-
-**Am ales sa facem o inteligenta artificiala de tip Machine Learning capabilă să identifice orice fel de tardigrada.**
-
-**Metodele utilizate de machine learning permit eliminarea necesității programării unei mașini pentru fiecare acțiune dintr-o lista de posibilități și stabilirea unor reacții pe care inteligenta mașinii ar trebui sa le aibă.**
-
-**În prezent, metodele de machine learning sunt din ce în ce mai sofisticate, fiind integrate, de exemplu, într-o serie de aplicații medicale complexe, cum ar fi diagnosticarea depresiei pe baza unor modele de vorbire, sau identificarea persoanelor cu tendințe de sinucidere.**
-
-**Intrucat acest tip de inteligenta artificiala este capabilă sa invete singura din o mulțime de date, cel mai important pas a fost colectarea datelor cu ajutorul cărora am reușit sa facem o inteligenta artificiala capabilă să identifice o tardigrada.** Am ales să facem acest program de recunoaștere a tardigradelor, deoarece obținerea datelor a fost mult mai facilă, acestea fiind microorganisme care trăiesc în medii de viață extreme iar mostrele le-am prelevat din jurul liceului, tardigradele putând fi găsite oriunde. Aceste mostre le-am lăsat înmuiate în apă, timp de cateva ore, după care le-am pus la microscop, putand identifica astfel tardigrade. Am făcut multe poze atat cu tardigrade, cât și fără tardigrade, pentru a învăța programul cât mai bine. Acesta trebuie antrenat pentru a învăța cât mai mult, dar totuși trebuie sa se opreasca la un anumit punct, pentru a nu crea confuzii.
+    **Inteligenta artificiala reprezinta capacitatea unui sistem de a interpreta corect datele externe, de a invata din astfel de date și de a folosi ceea ce a invatat pentru a-si atinge obiective și sarcini specifice printr-o adaptare flexibilă.**
+    
+    **Istoria inteligenței artificiale așa cum este ea percepută în ziua de astăzi tehnologie care gândește ca un om începe, însă, în a doua parte a secolului trecut. Odată cu invenția computerului digital în anii ‘40, ideea construcției unei minți artificiale, electronice, a prins tot mai mult contur. Din 1949 si pana in 1960, Arthur Samuel a lucrat intens la dezvoltarea inteligenței artificiale, de la simpla recunoaștere a unor modele, la învățarea din experiența. Spre deosebire de percepția generală, inteligența artificială nu se limitează doar la IT sau industria tehnologică, ci este utilizată pe scară largă în alte domenii, cum ar fi medicină, mediul de afaceri, sistemul educațional și producție. Un sistem A.I. poate invata prin doua metode principale: Machine Learning sau Deep Learning. De exemplu, Machine Learning se axează pe construcția sistemelor care pot învăța sau își pot îmbunătăți performanțele în funcție de datele pe care le procesează, în timp ce Deep Learning, se referă așa cum spune și denumirea la o învățare mai profundă, care are la bază metode de învățare automată, bazate pe rețele neuronale**
+    
+    **Am ales sa facem o inteligenta artificiala de tip Machine Learning capabilă să identifice orice fel de tardigrada.**
+    
+    **Metodele utilizate de machine learning permit eliminarea necesității programării unei mașini pentru fiecare acțiune dintr-o lista de posibilități și stabilirea unor reacții pe care inteligenta mașinii ar trebui sa le aibă.**
+    
+    **În prezent, metodele de machine learning sunt din ce în ce mai sofisticate, fiind integrate, de exemplu, într-o serie de aplicații medicale complexe, cum ar fi diagnosticarea depresiei pe baza unor modele de vorbire, sau identificarea persoanelor cu tendințe de sinucidere.**
+    
+    **Intrucat acest tip de inteligenta artificiala este capabilă sa invete singura din o mulțime de date, cel mai important pas a fost colectarea datelor cu ajutorul cărora am reușit sa facem o inteligenta artificiala capabilă să identifice o tardigrada.** Am ales să facem acest program de recunoaștere a tardigradelor, deoarece obținerea datelor a fost mult mai facilă, acestea fiind microorganisme care trăiesc în medii de viață extreme iar mostrele le-am prelevat din jurul liceului, tardigradele putând fi găsite oriunde. Aceste mostre le-am lăsat înmuiate în apă, timp de cateva ore, după care le-am pus la microscop, putand identifica astfel tardigrade. Am făcut multe poze atat cu tardigrade, cât și fără tardigrade, pentru a învăța programul cât mai bine. Acesta trebuie antrenat pentru a învăța cât mai mult, dar totuși trebuie sa se opreasca la un anumit punct, pentru a nu crea confuzii.
 
 **1.Bază teoretică**
 
