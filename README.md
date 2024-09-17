@@ -1,15 +1,15 @@
 
 
-**I.A.- Identificare microorganisme**
+**A.I - MICROORGANISM IDENTIFICATION**
                                                                                                            
                                                                                                            
-**LICEUL TEORETIC ION LUCA**
+**ION LUCA HIGHSCHOOL**
 
-**SUPERVIZORI:**
+**SUPERVISORS:**
 
   **PROFESOR BARCĂU MIRELA**
 
-**AUTORI:**
+**AUTHORS:**
 
   **LUPU SEBASTIAN-RADU**
   
@@ -17,94 +17,87 @@
 
 **2021**
 
-**ARGUMENT**
+# Tardigrade Detection using Machine Learning
 
-  **Inteligenta artificiala reprezinta capacitatea unui sistem de a interpreta corect datele externe, de a invata din astfel de date și de a folosi ceea ce a invatat pentru a-si atinge obiective și sarcini specifice printr-o adaptare flexibilă.**
-  
-  **Istoria inteligenței artificiale așa cum este ea percepută în ziua de astăzi tehnologie care gândește ca un om începe, însă, în a doua parte a secolului trecut. Odată cu invenția computerului digital în anii ‘40, ideea construcției unei minți artificiale, electronice, a prins tot mai mult contur. Din 1949 si pana in 1960, Arthur Samuel a lucrat intens la dezvoltarea inteligenței artificiale, de la simpla recunoaștere a unor modele, la învățarea din experiența. Spre deosebire de percepția generală, inteligența artificială nu se limitează doar la IT sau industria tehnologică, ci este utilizată pe scară largă în alte domenii, cum ar fi medicină, mediul de afaceri, sistemul educațional și producție. Un sistem A.I. poate invata prin doua metode principale: Machine Learning sau Deep Learning. De exemplu, Machine Learning se axează pe construcția sistemelor care pot învăța sau își pot îmbunătăți performanțele în funcție de datele pe care le procesează, în timp ce Deep Learning, se referă așa cum spune și denumirea la o învățare mai profundă, care are la bază metode de învățare automată, bazate pe rețele neuronale**
-  
-  **Am ales sa facem o inteligenta artificiala de tip Machine Learning capabilă să identifice orice fel de tardigrada.**
-  
-  **Metodele utilizate de machine learning permit eliminarea necesității programării unei mașini pentru fiecare acțiune dintr-o lista de posibilități și stabilirea unor reacții pe care inteligenta mașinii ar trebui sa le aibă.**
-  
-  **În prezent, metodele de machine learning sunt din ce în ce mai sofisticate, fiind integrate, de exemplu, într-o serie de aplicații medicale complexe, cum ar fi diagnosticarea depresiei pe baza unor modele de vorbire, sau identificarea persoanelor cu tendințe de sinucidere.**
-  
-  **Intrucat acest tip de inteligenta artificiala este capabilă sa invete singura din o mulțime de date, cel mai important pas a fost colectarea datelor cu ajutorul cărora am reușit sa facem o inteligenta artificiala capabilă să identifice o tardigrada.** Am ales să facem acest program de recunoaștere a tardigradelor, deoarece obținerea datelor a fost mult mai facilă, acestea fiind microorganisme care trăiesc în medii de viață extreme iar mostrele le-am prelevat din jurul liceului, tardigradele putând fi găsite oriunde. Aceste mostre le-am lăsat înmuiate în apă, timp de cateva ore, după care le-am pus la microscop, putand identifica astfel tardigrade. Am făcut multe poze atat cu tardigrade, cât și fără tardigrade, pentru a învăța programul cât mai bine. Acesta trebuie antrenat pentru a învăța cât mai mult, dar totuși trebuie sa se opreasca la un anumit punct, pentru a nu crea confuzii.
+## Introduction
 
-**1.Bază teoretică**
+Artificial intelligence (AI) is the capability of a system to correctly interpret external data, learn from it, and use what it has learned to achieve specific goals and tasks through flexible adaptation.
 
-**1.1 Metoda Haar**
+The history of AI, as we understand it today — a technology that "thinks" like a human — began in the second half of the last century. With the invention of the digital computer in the 1940s, the idea of constructing an artificial, electronic mind took shape. From 1949 to 1960, Arthur Samuel worked intensively on developing AI, from simple pattern recognition to learning from experience. Contrary to popular belief, AI is not limited to IT or the tech industry but is widely used in fields like medicine, business, education, and manufacturing. An AI system can learn through two main methods: Machine Learning and Deep Learning. For example, Machine Learning focuses on building systems that can learn or improve performance based on the data they process, while Deep Learning refers to more profound learning methods based on neural networks.
 
-Spre deosebire de majoritatea inteligențelor artificiale, noi am folosit o metoda matematica numită Haar care nu constă în folosirea rețelelor neuronale artificiale.
+We chose to develop a Machine Learning AI capable of identifying any type of tardigrade.
 
-Cercetătorii de detectare a obiectelor Paul Viola și Michael Jones în 2001 au propus o metodă de detectare a obiectelor într-o imagine digitală. Este una dintre primele metode capabile să detecteze obiecte efectiv și în timp real într-o imagine. Inventate inițial pentru a detecta fețele, poate fi, de asemenea, utilizat pentru a detecta alte tipuri de obiecte, cum ar fi mașinile sau aeronavele sau în cazul nostru tardigradele.
+Machine learning methods eliminate the need for programming a machine for every action from a list of possibilities. Instead, they set reactions based on the intelligence of the machine.
 
-Un pas important este învățarea programului cu date pozitive care conțin obiectul și datelor negative de preferat în volume mari și în procent de 50%.Datele folosite pentru instruirea programului trebuie într-o primă fază revizuite și clasificate.După pregătirea datelor, programul va căuta să extragă niște caracteristici comune pe care apoi le va folosi pentru identificarea obiectelor.De exemplu pentru recunoasterea facială se vor identifica diferențele intensității lumini dintre nas și ochi.După această prelucrare se identifică o mulțime de caracteristici iar apoi prin antrenamentul acestul program în mai multe generații se clasifică caracteristicile după fiecare generație după frecvența acestora.Se consideră că după fiecare generație programul se îmbunătățește.După faza de învățare clasificator, diferitele praguri pentru fiecare clasificator sunt înregistrate într-un fișier de metadate XML, care vor fi exploatate în faza de detectare.
+Currently, machine learning methods are becoming more sophisticated, integrated into complex medical applications, such as diagnosing depression based on speech patterns or identifying individuals with suicidal tendencies.
 
-**1.2 Librăria OpenCV**
+Since this type of AI is capable of learning from a vast amount of data, the most crucial step was gathering data. We managed to create an AI capable of identifying tardigrades. We chose this recognition project because data collection was more straightforward, given that tardigrades are microorganisms that live in extreme environments and can be found almost anywhere. We collected samples from the surroundings of our high school. We soaked these samples in water for a few hours and examined them under a microscope, where we could identify tardigrades. We took many pictures, both with and without tardigrades, to train the program effectively. The AI needs to be trained with a lot of data but must stop at a certain point to avoid confusion.
 
-Este o librărie open-source cu rol în detectarea vizuală. A fost scrisă inițial în limbajul C++, apoi adaptată pentru limbajele C, C\#, Python și Java.Această librărie poate fi folosită pentru sisteme de recunoaștere facială, recunoașterea gesturilor, obiectelor urmărirea și estimarea mișcărilor. Au început demersurile de a dezvolta această librărie în anul 1999 ca o inițiativă a departamentului de cercetare a gigantului Intel.Prima versiune beta a fost lansată în anul 2001 iar apoi o variantă finală 2006. Numele OpenCV vine de la cuvântul în engleză “open” care face referire că această librărie este cu sursă deschisă orice poate să o folosească și de la prescurtarea “CV” care vine de la “computer vision” din engleză.OpenCV rulează pe următoarele sisteme de operare desktop: Windows, Linux, macOS, FreeBSD, NetBSD, OpenBSD iar pe partea mobilă OpenCV rulează pe următoarele sisteme de operare mobile: Android, iOS, Maemo,BlackBerry 10. Utilizatorii pot prelua versiunea oficială din SourceForge sau ultimele coduri sursă din GitHub. OpenCV utilizează CMake.[1]// asta necesită citare de la https://ro.wikipedia.org/wiki/OpenCV
+## 1. Theoretical Basis
 
-**1.3 Arhitectura cascadei**
+### 1.1 Haar Method
 
-Aceasta este un pas important în recunoașterea datelor. Este o funcție recursivă ce face parte din metoda Viola Jones. Poza inițial împărțită în subcadrane, iar în fiecare stagiu al acestui funcții se verifică folosind un clasificator considerat puternic.În medie doar 0.01% din cadrane sunt pozitive.Toate cadranele au un timp de evaluare identic. În fiecare stagiu se alege un nou clasificator care are rolul de a elimina elementele fals pozitive.În a doua etapă se consideră că este o rată de identificare de 100% cu 50% de fals pozitive.
+Unlike most AI systems, we used a mathematical method called Haar, which does not rely on artificial neural networks.
 
-**1.4 AdaBoost**
+In 2001, Paul Viola and Michael Jones proposed an object detection method for digital images. It is one of the first methods capable of detecting objects efficiently and in real time. Initially invented for face detection, it can also detect other objects, such as cars or airplanes, and in our case, tardigrades.
 
-Este o tehnică de inteligență artificială folosită în arhitectura cascadei pentru a combina mai multe caracteristici slabe într-un clasificator puternic.Un alt element important care trebuie subliniat este acela că Viola şi Jones au utilizat AdaBoost
+An essential step is training the program with positive data that contains the object and negative data, preferably in large volumes and at a 50% ratio. The data used to train the program must first be reviewed and classified. After preparing the data, the program will attempt to extract common features that it will later use to identify objects. For example, in facial recognition, the program might detect differences in light intensity between the nose and the eyes. After processing, several features are identified, and then through training over several generations, these features are classified based on their frequency. With each generation, the program improves. After the learning phase, thresholds for each classifier are recorded in an XML metadata file, which will be used during the detection phase.
 
-nu numai pentru antrenarea clasificatorului, dar şi pentru selectarea unui număr considerabil mai mic dintre toate caracteristicile iniţial definite, care să fie utilizate în cele din urmă.[2]//Revista Română de Informatică şi Automatică, vol. 23, nr. 2, 2013
+### 1.2 OpenCV Library
 
-**2.Antrenarea programului**
+OpenCV is an open-source library used for visual detection. Initially written in C++, it was later adapted for C, C#, Python, and Java. This library can be used for facial recognition, gesture recognition, object tracking, and motion estimation. OpenCV began as a research initiative by Intel in 1999. The first beta version was released in 2001, with the final version coming in 2006. The name "OpenCV" comes from "open" referring to its open-source nature, and "CV" which stands for "computer vision." OpenCV runs on several desktop operating systems, including Windows, Linux, macOS, FreeBSD, NetBSD, OpenBSD, and on mobile systems like Android, iOS, Maemo, and BlackBerry 10.
 
-**2.1Procesul de prelucrare și identificare a datelor**
+### 1.3 Cascade Architecture
 
-După prelevarea datelor brute le-am clasificat în pozitive și negative, am folosit în jur de 600 de imagini.Am luat fiecare imagine pozitiv, analizat-o și am încadrat obiectul sau obiectele într-un dreptunghi care conține toți pixeli acestuia și am memorat numărul obiectelor și poziția acestora. Am făcut acest proces pentru a-l ajuta să identice o tardigradă şi pentru a salva coordonatele dreptunghiului în care a fost încadrat pentru a-l putea antrena mai târziu să încadreze singur o tardigradă în interiorul unui dreptunghi.
+This is an essential step in data recognition and is part of the Viola-Jones method. The initial image is divided into sub-grids, and in each stage of this function, a "strong" classifier is used for detection. On average, only 0.01% of sub-grids are positive. Each sub-grid has an identical evaluation time. In each stage, a new classifier is chosen to eliminate false positives.
 
-Putem observa procesul în figura 1.
+### 1.4 AdaBoost
 
-![](media/cb0b0149223769800ac616c2d9618382.png)
+AdaBoost is an AI technique used in the cascade architecture to combine multiple weak classifiers into a strong one. One key aspect is that Viola and Jones used AdaBoost not only to train the classifier but also to select a significantly smaller number of initially defined features to be used in the final stages.
 
-**Figura 1**
+## 2. Training the Program
 
-**2.2 Procesul de antrenare al programului**
+### 2.1 Data Processing and Identification
 
-Folosind un script adică un fișier cu extensia .bat am antrenat programul să identifice tardigradele folosind datele oferite acestuia adică 400 de imagini pozitive, și am ajuns la concluzia că numărul optim de generații este de 20, tot ce este peste, are o marjă de eroare mai ridicată deoarece nu am avut un ansamblu de date destul de mare, iar folosind un număr mai scăzut de generații, programul nu are timp să rafineze toate datele.
+After collecting the raw data, we classified it into positive and negative datasets, using around 600 images. For each positive image, we manually analyzed and enclosed the object(s) in a rectangle containing all its pixels, recording the number and position of objects. This process was crucial to teaching the program to identify a tardigrade and later enclose it in a rectangle automatically.
 
-**3. Aplicații**
+### 2.2 Training the Program
 
-**3.1Prezentarea programului**
+Using a script with a `.bat` extension, we trained the program to identify tardigrades using the provided data, around 400 positive images. We concluded that the optimal number of generations is 20; beyond that, the error margin increases due to the limited dataset. A lower number of generations did not provide enough time for the program to refine all the data.
 
-Programul este alcatuit din 4 subprograme si 3 scripturi. Doua dintre subprograme sunt folosite pentru a crea date din pozele salvate, iar mai apoi pentru a le interpreta, iar celelalte 2 subprograme sunt folosite pentru a crea date prin intermediul camerei, iar mai apoi de a le interpreta tot prin intermediul camerei. Cele 3 scripturi sunt folosite pentru a antrena programul, adică în exemplul nostru pentru a-l invata sa identifice o tardigrada.
+## 3. Applications
 
-pui poză cu folderu
+### 3.1 Program Overview
 
-**3.2 Subprograme**
+The program consists of four subprograms and three scripts. Two subprograms are used to create data from saved images, and the other two are for data captured from the camera. The three scripts are used for training the program — in our case, teaching it to identify tardigrades.
 
-**3.2.1 Subprogramul de prelucrare a datelor din galerie**
+### 3.2 Subprograms
 
-Prima oară apasand tasta q programul va șterge toate pozele din folderele positive și negative. Apoi subprogramul va prelua toate pozele din galerie, după care le va împărți în pozitive și negative. Astfel dacă identificăm într-o poza o tardigrada, vom apăsa tasta p pentru a o salva în folderul positive, altfel vom apăsa tasta n pentru a o salva în folderul negative. Cele negative reprezinta poze fara tardigrade si nu necesita niciun fel de prelucrare. Cele pozitive, în schimb necesita prelucrare în plus și anume faptul ca tardigradele trebuie încadrate manual într-un dreptunghi, așa cum se vede și în figura 1. Coordonatele dreptunghiului vor fi salvate într-un fișier de tip .txt și vor fi folosite mai târziu
+#### 3.2.1 Data Processing from Gallery
 
-**3.2.2 Subprogramul de identificare a datelor din galerie**
+By pressing the `q` key, the program deletes all images from the positive and negative folders. Then, the subprogram processes all images from the gallery, classifying them into positive and negative categories. If a tardigrade is identified in an image, pressing `p` saves it to the positive folder; otherwise, pressing `n` saves it to the negative folder. Negative images do not require further processing, while positive images must be manually enclosed in rectangles, with their coordinates stored for later use.
 
-**3.2.3 Subprogramul de prelucrare a datelor cu date din camera foto**
+#### 3.2.2 Data Identification from Gallery
 
-**3.2.4 Subprogramul de identificare a datelor în direct**
+#### 3.2.3 Data Processing from the Camera
 
-**3.3 Scripturi**
+#### 3.2.4 Live Data Identification
 
-**3.3.1 Adnotarea pozitivelor**
+### 3.3 Scripts
 
-Acest script este esențial în procesul de prelucrare a datelor pozitive. Cu acest program am putut pune un dreptunghi în jurul tardigradei sau obiectului dorit să fie identificat și să stocăm informația aceasta și să transferăm datele pozitive în folderul cu imagini pozitive.Putem vedea procesul de punere în dreptunghiuri a tardigradelor în figura 1.
+#### 3.3.1 Annotating Positives
 
-**3.3.2 Atribuirea pozitivelor în fișierul cu extensia .xml**
+This script is essential in processing positive data. It allows the user to enclose tardigrades or other objects in rectangles and store the data for future use.
 
-Având în vedere că programul nu poate funcționa fără fișierul cu extensia .xml, am fost nevoiți să preluăm datele pozitive din folderul positives și apoi să creăm acest fișier de tip .xml am creat acest script pentru a nu face acest lucru manual deoarece este un proces îndelungat .
+#### 3.3.2 Assigning Positives to an XML File
 
-**3.3.3 Antrenarea programului**
+The program requires an XML file to function. We used this script to automate the process of converting positive data into an XML file.
 
-Am scris acest script deoarece dacă programul nu este antrenat cu datele positive acesta nu este în stare să identifice tardigradele sau obiectele dorite.Acest script după rulare, trebuie să îi fie dați 2 parametri, numărul de generați dorite și numărul de poze pozitive.
+#### 3.3.3 Training the Program
 
-**3.4 Plasticitatea programului**
+This script was created to train the program with positive data. After running the script, two parameters must be provided: the desired number of generations and the number of positive images.
 
-Cel mai remarcabil lucru al acestui program este capacitatea de adaptare la datele acordate.Dacă dorim să învățăm acest program să identifice obiecte precum masini , avioane sau mai multe microorganisme cum am dorit în prima fază a acestui proiect însă timpul nu ne-a lăsat această posibilitate, trebuie doar să prelucrăm poze cu lucrul dorit și să parcurgem aceeași etape iar programul va putea recunoaște tardigradele și celelalte obiecte.
+### 3.4 Program Flexibility
+
+The most remarkable feature of this program is its adaptability. If you wish to teach the program to identify other objects like cars, airplanes, or other microorganisms (as we initially intended but couldn’t due to time constraints), you only need to process images of the desired object and follow the same steps. The program will be able to recognize both tardigrades and other objects.
+
